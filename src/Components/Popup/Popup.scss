@@ -4,11 +4,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0, 0, 0, 0.7);
-	// transition: opacity 500ms;
-	// visibility: hidden;
-	// opacity: 0;
-
+	background-color: rgba(255,255,255,1);
 
 	.popup {
 		width: 1400px;
@@ -22,7 +18,6 @@
 		box-sizing: border-box;
 		border-radius: 24px;
 		padding: 70px 80px 105px 80px;
-		// border: 1.5px solid #000000;
 
 		& .logo {
 			margin-right: auto;
@@ -33,11 +28,6 @@
 		}
 
 		& .closePopup {
-			// margin-right: auto;
-			// text-align: unset;
-			// width: 326px;
-			// height: 85px;
-			// margin-bottom: 38px;
 			width: 64px;
 			height: 64px;
 			position: fixed;
@@ -58,7 +48,7 @@
 			& .col {
 				text-align: left;
 				width: 600px;
-				// font-family: "Graphik RBC LC";
+				font-family: "Graphik RBC LC";
 				font-style: normal;
 				font-weight: normal;
 				font-size: 18px;
@@ -73,7 +63,7 @@
 					margin-right: 30px;
 				}
 
-				&:second-child {
+				&:nth-child(2) {
 					width: 592px;
 				}
 
@@ -94,7 +84,8 @@
 
 			& .partner_info {
 				background-color: #DED7CE;
-				width: 1226px;
+				// width: 1226px;
+				width: 100%;
 				height: 270px;
 				position: absolute;
 				bottom: 0;
@@ -108,7 +99,7 @@
 				& .info,
 				& .name,
 				& .partner {
-					// font-family: Graphik RBC LC;
+					font-family: "Graphik RBC LC";
 					font-style: normal;
 					font-weight: normal;
 					color: #000000;
@@ -125,12 +116,9 @@
 				& .name {
 					font-size: 24px;
 					line-height: 21px;
-					// position: absolute;
 					margin-bottom: 11px;
 					width: 221px;
 					height: 21px;
-					// left: 388px;
-					// top: 845px;
 				}
 
 				& .partner {
@@ -147,6 +135,11 @@
 				position: absolute;
 				right: 159px;
 				bottom: 0;
+
+				& img {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
 
@@ -167,10 +160,7 @@
 			& .text {
 				width: 352px;
 				height: 28px;
-				// left: 724px;
-				// bottom: 437px;
-
-				// font-family: Graphik RBC LC;
+				font-family: "Graphik RBC LC";
 				font-style: normal;
 				font-weight: normal;
 				font-size: 23px;
@@ -187,6 +177,280 @@
 				& img {
 					width: 100%;
 					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.popup-bg {
+		.popup {
+			width: 1080px;
+			height: 988px;
+			padding: 52px 53px 87px 79px;
+
+			& .logo {
+				width: 247px;
+				height: 65px;
+				margin-bottom: 53px;
+			}
+
+			& .company_info {
+				& .col {
+					font-size: 16px;
+					line-height: 27px;
+					margin-bottom: 39px;
+
+					&:first-child {
+						margin-right: 28px;
+						width: 454px;
+					}
+
+					&:nth-child(2) {
+						width: 436px;
+					}
+				}
+			}
+
+			& .company_partners {
+				width: 928px;
+				height: 251px;
+				margin-bottom: 70px;
+
+				& .partner_info {
+					height: 204px;
+					padding: 30px;
+
+					& .info,
+					& .name,
+					& .partner {
+						// font-family: Graphik RBC LC;
+						font-style: normal;
+						font-weight: normal;
+						color: #000000;
+					}
+
+					& .info {
+						font-size: 20px;
+						line-height: 27px;
+						width: 441px;
+						height: 81px;
+						margin-bottom: 20px;
+					}
+
+					& .name {
+						font-size: 21px;
+						line-height: 21px;
+						margin-bottom: 8px;
+						width: 193px;
+						height: 21px;
+					}
+
+					& .partner {
+						width: 118px;
+						height: 14px;
+						font-size: 12px;
+						line-height: 14px;
+					}
+				}
+
+				& .partner_photo {
+					width: 364px;
+					height: 251px;
+					right: 79px;
+
+
+				}
+			}
+
+			& .learn-more {
+				width: 928px;
+				height: 128px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.popup-bg {
+		.popup {
+			width: 928px;
+			height: 934px;
+			padding: 45px 48px 80px 38px;
+
+			& .logo {
+				margin-bottom: 40px;
+			}
+
+			& .company_info {
+				& .col {
+					&:nth-child(1),
+					&:nth-child(2) {
+						width: 100%;
+						margin-bottom: 16px;
+					}
+				}
+			}
+
+			& .company_partners {
+				width: 832px;
+				margin-bottom: 60px;
+
+				& .partner_photo {
+					right: 11px;
+				}
+			}
+
+			& .learn-more {
+				width: 832px;
+				height: 104px;
+			}
+		}
+	}
+}
+
+@media (max-width: 980px) {
+	.popup-bg {
+		.popup {
+			width: 768px;
+			height: 934px;
+			padding: 45px 48px 80px 38px;
+
+			& .logo {
+				margin-bottom: 40px;
+			}
+
+			& .company_info {
+				& .col {
+					&:nth-child(1),
+					&:nth-child(2) {
+						width: 100%;
+						margin-bottom: 16px;
+					}
+				}
+			}
+
+			& .company_partners {
+				width: 678px;
+				margin-bottom: 60px;
+
+				& .partner_info {
+					// height: 185px;
+
+					& .info {
+						font-size: 16.36px;
+						// line-height: 23px;
+						width: 363px;
+						height: 69px;
+						margin-bottom: 30px;
+					}
+				}
+
+				& .partner_photo {
+					right: -15px;
+				}
+			}
+
+			& .learn-more {
+				width: 678px;
+				height: 104px;
+			}
+		}
+	}
+}
+
+@media (max-width: 788px) {
+	.popup-bg {
+		.popup {
+			width: 703px;
+			height: 831px;
+			padding: 52px 38px 61px 29px;
+
+			& .logo {
+				margin-bottom: 28px;
+				width: 200px;
+				height: 53px;
+			}
+
+			& .closePopup {
+				width: 48px;
+				height: 48px;
+				top: 24px;
+				right: 24px;
+			}
+
+			& .company_info {
+				margin-bottom: 52px;
+				& .col {
+					font-size: 14px;
+					line-height: 22px;
+
+					&:nth-child(1) {
+						margin-right: 0;
+					}
+
+					&:nth-child(1),
+					&:nth-child(2) {
+						width: 100%;
+						margin-bottom: 16px;
+					}
+				}
+			}
+
+			& .company_partners {
+				width: 629px;
+				height: 227px;
+				margin-bottom: 42px;
+
+				& .partner_info {
+					height: 185px;
+
+					& .info {
+						font-size: 16px;
+						line-height: 23px;
+						width: 363px;
+						height: 69px;
+					}
+
+					& .name {
+						font-size: 18px;
+						margin-bottom: 7px;
+						width: 167px;
+						height: 21px;
+					}
+
+					& .partner {
+						font-size: 12px;
+						line-height: 14.4px;
+						width: 119px;
+						height: 14px;
+					}
+
+				}
+
+				& .partner_photo {
+					right: -20px;
+					width: 328px;
+					height: 227px;
+				}
+			}
+
+			& .learn-more {
+				width: 628px;
+				height: 81px;
+
+				& .text {
+					width: 245px;
+					margin-right: 32px;
+					font-size: 16px;
+					// line-height: 19.2px;
+				}
+
+				& .icon {
+					width: 28.6px;
+					height: 28.6px;
+
 				}
 			}
 		}

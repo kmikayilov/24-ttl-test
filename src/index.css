@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Graphik RBC LC';
-  src: local('Graphik RBC LC'), url(./assets/fonts/graphic-rbc-lc/Graphik-Regular.woff) format('woff');
+  src: local('Graphik RBC LC'), url(./assets/fonts/Graphik-RBC-LC/Graphik RBC LC-Regular.otf) format('opentype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Graphik RBC LC';
-  src: local('Graphik RBC LC'), url(./assets/fonts/graphic-rbc-lc/Graphik-Bold.woff) format('woff');
+  src: local('Graphik RBC LC'), url(./assets/fonts/Graphik-RBC-LC/Graphik RBC LC-Bold.otf) format('opentype');
   font-weight: bold;
 }
 

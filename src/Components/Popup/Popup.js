@@ -20,7 +20,7 @@ class Popup extends Component {
           </div>
           <div className="company_partners">
             <div className="partner_info">
-              <div className="info">Один из создателей и Президент Ассоциации  торгово-технологических компаний (АТТК)</div>
+              <div className="info">Один из создателей и Президент Ассоциации торгово-технологических компаний (АТТК)</div>
               <div className="name">Сергей Егорушкин</div>
               <div className="partner">Партнёр B2basket</div>
             </div>
