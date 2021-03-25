@@ -57,6 +57,10 @@
 				font-size: 18px;
 				line-height: 32px;
 
+				& a {
+					color: #0073E6;
+				}
+
 				letter-spacing: -0.035em;
 
 				color: #000000;
@@ -163,7 +167,8 @@
 			}
 
 			& .text {
-				width: 352px;
+				width: fit-content;
+				// width: 352px;
 				height: 28px;
 				font-family: "Graphik RBC LC";
 				font-style: normal;
@@ -335,7 +340,7 @@
 					// height: 185px;
 
 					& .info {
-						font-size: 16.36px;
+						font-size: 17px;
 						// line-height: 23px;
 						width: 363px;
 						height: 69px;
@@ -403,7 +408,7 @@
 					height: 185px;
 
 					& .info {
-						font-size: 16px;
+						font-size: 17px;
 						line-height: 23px;
 						width: 363px;
 						height: 69px;
@@ -457,38 +462,9 @@
 	.popup-bg {
 		.popup {
 			width: 600px;
-			// height: 831px;
-			// padding: 52px 38px 61px 29px;
-
-			// & .logo {
-			// 	margin-bottom: 28px;
-			// 	width: 200px;
-			// 	height: 53px;
-			// }
-
-			// & .closePopup {
-			// 	width: 48px;
-			// 	height: 48px;
-			// 	top: 24px;
-			// 	right: 24px;
-			// }
 
 			& .company_info {
 				margin-bottom: 0px;
-				// & .col {
-				// 	font-size: 14px;
-				// 	line-height: 22px;
-
-				// 	&:nth-child(1) {
-				// 		margin-right: 0;
-				// 	}
-
-				// 	&:nth-child(1),
-				// 	&:nth-child(2) {
-				// 		width: 100%;
-				// 		margin-bottom: 16px;
-				// 	}
-				// }
 			}
 
 			& .company_partners {
@@ -497,20 +473,22 @@
 				margin-bottom: 42px;
 
 				& .partner_info {
+					padding: 27px;
 					height: 155px;
 
 					& .info {
-						font-size: 14px;
-						// line-height: 23px;
-						width: 363px;
+						font-size: 15px;
+						line-height: 20px;
+						width: 313px;
 						height: 69px;
+						margin-bottom: 20px;
 					}
 
 					& .name {
 						font-size: 15px;
 						margin-bottom: 7px;
 						width: 167px;
-						height: 21px;
+						height: 15px;
 					}
 
 					& .partner {
@@ -570,9 +548,9 @@
 					height: 275px;
 
 					& .info {
-						font-size: 14px;
+						font-size: 16px;
 						// line-height: 23px;
-						width: 363px;
+						width: 313px;
 						height: 69px;
 						margin-bottom: 140px;
 					}
@@ -665,7 +643,7 @@
 					padding: 20px;
 
 					& .info {
-						font-size: 14px;
+						font-size: 16px;
 						// line-height: 23px;
 						width: 328px;
 						height: 66px;

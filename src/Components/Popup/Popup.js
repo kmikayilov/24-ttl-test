@@ -2,7 +2,7 @@ import React, {useState, Component} from 'react';
 import basket from '../../assets/icons/b2basket.svg';
 import vector from '../../assets/icons/Vector.svg';
 import cancel from '../../assets/icons/cancel.svg';
-import photo from '../../assets/photos/partner-photo.png';
+import photo from '../../assets/photos/partner_photo.png';
 
 import './Popup.scss';
 
