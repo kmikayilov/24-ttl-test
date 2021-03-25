@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import ttl from './assets/icons/24-ttl.svg';
+import basket from './assets/icons/b2basket.svg';
+import cloudcontent from './assets/icons/cloudcontent.svg';
+import React, {useState, Component} from 'react';
+import Popup from './Components/Popup/Popup';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+
+class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  togglePopup() {
+    // console.log(this.state.isOpen);
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="App_wrapper">
+          <div className="logo" ><img src={ttl} alt="24-ttl-logo"/></div>
+          <div className="logo" ><img src={cloudcontent} alt="cloudcontent-logo"/></div>
+          <div className="logo" onClick={this.togglePopup.bind(this)}><img src={basket} alt="b2basket-logo"/></div>
+        </div>
+
+        {this.state.isOpen ? <Popup closePopup={this.togglePopup.bind(this)} /> : null}
+
+      </div>
+    );
+  }
 }
 
 export default App;
