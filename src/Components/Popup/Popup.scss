@@ -1,5 +1,5 @@
 .popup-bg {
-  	padding: 20px;
+  	// padding: 20px;
 	overflow-y: auto;
 	position: fixed;
 	top: 0;
@@ -120,8 +120,10 @@
 					font-size: 24px;
 					line-height: 21px;
 					margin-bottom: 11px;
-					width: 221px;
+					width: fit-content;
 					height: 21px;
+					font-style: bold;
+					font-weight: bold;
 				}
 
 				& .partner {
@@ -225,15 +227,6 @@
 					height: 204px;
 					padding: 30px;
 
-					& .info,
-					& .name,
-					& .partner {
-						// font-family: Graphik RBC LC;
-						font-style: normal;
-						font-weight: normal;
-						color: #000000;
-					}
-
 					& .info {
 						font-size: 20px;
 						line-height: 27px;
@@ -246,7 +239,7 @@
 						font-size: 21px;
 						line-height: 21px;
 						margin-bottom: 8px;
-						width: 193px;
+						width: 213px;
 						height: 21px;
 					}
 
@@ -363,7 +356,7 @@
 	}
 }
 
-@media (max-width: 788px) {
+@media (max-width: 800px) {
 	.popup-bg {
 		.popup {
 			width: 703px;
@@ -419,8 +412,8 @@
 					& .name {
 						font-size: 18px;
 						margin-bottom: 7px;
-						width: 167px;
-						height: 21px;
+						width: 197px;
+						height: 31px;
 					}
 
 					& .partner {
@@ -455,6 +448,353 @@
 					height: 28.6px;
 
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 730px) {
+	.popup-bg {
+		.popup {
+			width: 600px;
+			// height: 831px;
+			// padding: 52px 38px 61px 29px;
+
+			// & .logo {
+			// 	margin-bottom: 28px;
+			// 	width: 200px;
+			// 	height: 53px;
+			// }
+
+			// & .closePopup {
+			// 	width: 48px;
+			// 	height: 48px;
+			// 	top: 24px;
+			// 	right: 24px;
+			// }
+
+			& .company_info {
+				margin-bottom: 0px;
+				// & .col {
+				// 	font-size: 14px;
+				// 	line-height: 22px;
+
+				// 	&:nth-child(1) {
+				// 		margin-right: 0;
+				// 	}
+
+				// 	&:nth-child(1),
+				// 	&:nth-child(2) {
+				// 		width: 100%;
+				// 		margin-bottom: 16px;
+				// 	}
+				// }
+			}
+
+			& .company_partners {
+				width: 540px;
+				height: 227px;
+				margin-bottom: 42px;
+
+				& .partner_info {
+					height: 155px;
+
+					& .info {
+						font-size: 14px;
+						// line-height: 23px;
+						width: 363px;
+						height: 69px;
+					}
+
+					& .name {
+						font-size: 15px;
+						margin-bottom: 7px;
+						width: 167px;
+						height: 21px;
+					}
+
+					& .partner {
+						font-size: 10px;
+						line-height: 14.4px;
+						width: 119px;
+						height: 14px;
+					}
+
+				}
+
+				& .partner_photo {
+					right: -30px;
+					width: 308px;
+					height: 227px;
+				}
+			}
+
+			& .learn-more {
+				width: 540px;
+				height: 81px;
+
+				& .text {
+					width: 245px;
+					margin-right: 32px;
+					font-size: 16px;
+					// line-height: 19.2px;
+				}
+
+				& .icon {
+					width: 28.6px;
+					height: 28.6px;
+
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 645px) {
+	.popup-bg {
+		.popup {
+			width: 480px;
+			height: 1050px;
+
+			& .company_info {
+				margin-bottom: 0px;
+				
+			}
+
+			& .company_partners {
+				width: 420px;
+				height: 327px;
+				margin-bottom: 42px;
+
+				& .partner_info {
+					height: 275px;
+
+					& .info {
+						font-size: 14px;
+						// line-height: 23px;
+						width: 363px;
+						height: 69px;
+						margin-bottom: 140px;
+					}
+
+					& .name {
+						font-size: 15px;
+						margin-bottom: 7px;
+						width: 167px;
+						height: 21px;
+					}
+
+					& .partner {
+						font-size: 10px;
+						line-height: 14.4px;
+						width: 119px;
+						height: 14px;
+					}
+
+				}
+
+				& .partner_photo {
+					right: -30px;
+					width: 258px;
+					height: 187px;
+				}
+			}
+
+			& .learn-more {
+				width: 420px;
+				height: 81px;
+
+				& .text {
+					width: 215px;
+					margin-right: 32px;
+					font-size: 14px;
+				}
+
+				& .icon {
+					width: 28.6px;
+					height: 28.6px;
+
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.popup-bg {
+		.popup {
+			width: 480px;
+			height: 1000px;
+			padding: 20px;
+			border: none;
+			margin: 0;
+
+			& .logo {
+				width: 189px;
+				height: 51px;
+				margin-bottom: 30px;
+				margin-top: 5px;
+			}
+
+			& .company_info {
+				margin-bottom: 30px;
+
+				& .col {
+					margin-bottom: 15px;	
+					
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3) {
+						width: 100%;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			& .company_partners {
+				// width: 374px;
+				width: 100%;
+				height: 253px;
+				// margin-bottom: 42px;
+
+				& .partner_info {
+					height: 100%;
+					padding: 20px;
+
+					& .info {
+						font-size: 14px;
+						// line-height: 23px;
+						width: 328px;
+						height: 66px;
+						margin-bottom: 90px;
+					}
+
+					& .name {
+						font-size: 13px;
+						margin-bottom: 7px;
+						width: 137px;
+						height: 28px;
+					}
+
+					& .partner {
+						font-size: 10px;
+						line-height: 14.4px;
+						width: 109px;
+						height: 13px;
+					}
+
+				}
+
+				& .partner_photo {
+					right: -30px;
+					width: 259px;
+					height: 186px;
+				}
+			}
+
+			& .learn-more {
+				// width: 420px;
+				width: 100%;
+				height: 81px;
+
+				& .text {
+					width: fit-content;
+					margin-right: 0;
+					font-size: 14px;
+				}
+
+				& .icon {
+					display: none;
+
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 410px) {
+	.popup-bg {
+		.popup {
+			width: 480px;
+			height: 1150px;
+			padding: 20px;
+			border: none;
+
+			& .logo {
+				width: 189px;
+				height: 51px;
+				margin-bottom: 30px;
+				margin-top: 5px;
+			}
+
+			& .company_info {
+				margin-bottom: 30px;
+
+				& .col {
+					margin-bottom: 15px;	
+					
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3) {
+						width: 100%;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			& .company_partners {
+				// width: 374px;
+				width: 100%;
+				height: 349px;
+					overflow: hidden;
+				// margin-bottom: 42px;
+
+				& .partner_info {
+					& .info {
+						font-size: 16px;
+						// line-height: 23px;
+						// width: 328px;
+						width: 100%;
+						height: 66px;
+						margin-bottom: 150px;
+					}
+
+					& .name {
+						z-index: 3;
+						font-size: 16px;
+						margin-bottom: 17px;
+						width: 137px;
+						height: 38px;
+					}
+
+					& .partner {
+						z-index: 4;
+						font-size: 10px;
+						line-height: 14.4px;
+						width: 109px;
+						height: 13px;
+					}
+
+				}
+
+				& .partner_photo {
+					z-index: 2;
+					right: -60px;
+					width: 259px;
+					height: 186px;
+				}
+
+
+			}
+
+			& .learn-more {
+				height: 56px;
 			}
 		}
 	}
