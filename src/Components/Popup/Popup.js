@@ -1,38 +1,89 @@
 import React, {useState, Component} from 'react';
-import basket from '../../assets/icons/b2basket.svg';
-import vector from '../../assets/icons/Vector.svg';
-import cancel from '../../assets/icons/cancel.svg';
-import photo from '../../assets/photos/partner_photo.png';
 
+
+import Partner from '../Partner/Partner';
+import Button from '../Button/Button';
+import Info from '../Info/Info';
+
+import cancel from '../../assets/icons/cancel.svg';
 import './Popup.scss';
 
+const logos = require.context('../../assets/icons', true);
+const partners = require.context('../../assets/partners', true);
+
 class Popup extends Component {
+
   render() {
+    let logo = logos(`./${this.props.company}.svg`);
+    let partner = null;
+    let info = null;
+
+    switch(this.props.company) {
+      case 'b2basket':
+        partner = 
+             <Partner 
+                info="Один из создателей и Президент Ассоциации торгово-технологических компаний (АТТК)" 
+                name="Сергей Егорушкин" 
+                jobtitle="Партнёр B2basket" 
+                photo={partners('./egorushkin.png').default} /> ;
+
+        info = <Info 
+                text1="Eдиный центр электронной торговли. Помогает интернет-магазинам, производителям и поставщикам продавать на маркетплейсах, прайс-площадках и в социальных сетях. Обеспечивает полный цикл услуг от первого клика до вручения товара покупателю за счет собственных инструментов и компетенций."
+                text2="Специализируется на товарном размещении и рекламе с показателями эффективности по СРО, ДРР, ROI и прибыли, с аналитикой до каждого товара. Сертифицированные агентство и технологический партнер Яндекс.Маркет, Google Merchant, Оzon, Aliexpress/Tmall и других площадок."
+                text3="Работает с 2013 года, 87% клиентов улучшают показатели эффективности каналов продаж. Соучредитель "
+                link="Ассоциации торгово-технологических компаний (АТTK)." /> ;
+         break;
+
+      case 'cloudcontent':
+        partner = 
+          <React.Fragment> 
+            <Partner 
+              info="Основатель, коммерческий директор компании CloudContent и вице-президент по развитию цифрового и нового бизнеса АТТК"  
+              name="Дмитрий Безруков" 
+              jobtitle="представитель Cloud content" 
+              photo={partners('./bezrukov.png').default} /> 
+            <Partner 
+              info="Основатель, операционный директор CloudContent. Вице президент по финансам и операционной деятельности АТТК" 
+              name="Алексей Цибакин" 
+              jobtitle="представитель Cloud content" 
+              photo={partners('./cibakin.png').default} /> 
+          </React.Fragment> ;
+
+          info = <Info 
+                text1="Единственная технологическая компания на рынке России  в области создания контента в промышленных масштабах, способная удовлетворить любые потребности клиентов. Продуктовые решения компании позволяют как создаватьконтент практически любого типа,  но и обрабатывать, хранить и транслировать его в каналы продаж."
+                text2="Специалисты компании с многолетним опытом помогают разрабатывать структуры сложнейших каталогов и товарных карточек с 2012 года,  а специально разработанное ПО передавать, хранить, обновлять  и обрабатывать эти данные."
+                text3="Мы сотрудничаем с крупными маркетплейсами и брендами, такими как, Goods, Henderson, Магнит, Сбермаркет, Все Инструменты, Перекресток" /> ;
+         break;
+      case '24-ttl':
+        partner = 
+          <React.Fragment> 
+            <Partner 
+              info="Создатель Online Retail Management School. Один из создателей и вице-президент по инновациям Ассоциации торгово-технологических компаний (АТТК)"  
+              name="Юрий Шишкин" 
+              jobtitle="Основатель и руководитель 24TTL" 
+              photo={partners('./shishkin.png').default} /> 
+            <Partner 
+              info="Руководитель образовательных программ ORM School. Вице-президент по цифровым проектам Ассоциации торгово-технологических компаний." 
+              name="Григорий Черняев" 
+              jobtitle="Стратегический консультант 24TTl" 
+              photo={partners('./chernyaev.png').default} /> 
+          </React.Fragment> ;
+
+          info = <Info 
+                text1="Одна из ведущих международных консалтинговых IT-компаний, специализирующаяся на разработке инновационных технологических продуктов для онлайн-ритейла, которые повышают конверсию и продажи. Решения 24TTL позволяют провести мониторинг присутствия бренда на маркетплейсах, автоматизировать создание и дистрибуцию высококонверсивного брендового контента, включая rich-контент, видео и дополненную реальность, а также проанализировать его качество и создать стратегию для дальнейшего развития."
+                text2="Компания работает в 5 странах: Россия, Украина, Нидерланды, Арабские Эмираты, США. Среди клиентов компании: LG, Hyundai, Phillips, Colgate-Palmolive, Abbott, Panasonic, Procter&Gamble, Lego, Electrolux, Nikon, Grohe, Sennheiser, Omron. 24TTL – резидент Сколково с 2019 года." 
+                text3="" /> ;
+    }
+
     return (
       <div className="popup-bg">
         <div className="popup">
-          <img src={basket} alt="b2basket-logo" className="logo"/>
+          <img src={logo.default} alt="b2basket-logo" className="logo"/>
           <img src={cancel} onClick={this.props.closePopup} alt="closePopup" className="closePopup" />
-          <div className="company_info">
-            <div className="col">Eдиный центр электронной торговли. Помогает интернет-магазинам, производителям и поставщикам продавать на маркетплейсах, прайс-площадках и в социальных сетях. Обеспечивает полный цикл услуг от первого клика до вручения товара покупателю за счет собственных инструментов и компетенций.</div>
-            <div className="col">Специализируется на товарном размещении и рекламе с показателями эффективности по СРО, ДРР, ROI и прибыли, с аналитикой до каждого товара. Сертифицированные агентство и технологический партнер Яндекс.Маркет, Google Merchant, Оzon, Aliexpress/Tmall и других площадок.</div>
-            <div className="col">Работает с 2013 года, 87% клиентов улучшают показатели эффективности каналов продаж. Соучредитель <a href="#">Ассоциации торгово-технологических компаний (АТTK).</a></div>
-          </div>
-          <div className="company_partners">
-            <div className="partner_info">
-              <div className="info">Один из создателей и Президент Ассоциации торгово-технологических компаний (АТТК)</div>
-              <div className="name">Сергей Егорушкин</div>
-              <div className="partner">Партнёр B2basket</div>
-            </div>
-            <div className="partner_photo"><img src={photo} /></div>
-          </div>
-
-          <div className="learn-more">
-            <div className="text">Узнать больше об B2basket</div>
-            <div className="icon"><img src={vector} alt="vector" /></div>
-          </div>
+          {info}
+          {partner}
+          <Button company={this.props.company} />
         </div> 
-
       </div>
     );
   }

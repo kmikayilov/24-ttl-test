@@ -1,0 +1,311 @@
+.company_partners {
+	width: 1226px;
+	height: 336px;
+	position: relative;
+	margin-bottom: 70px;
+
+	& .partner_info {
+		background-color: #DED7CE;
+		width: 100%;
+		height: 270px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+		box-sizing: border-box;
+		border-radius: 18px;
+
+		& .info,
+		& .name,
+		& .partner {
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		& .info {
+			font-size: 23px;
+			line-height: 31px;
+			width: 517px;
+			height: 93px;
+			margin-bottom: 46px;
+		}
+
+		& .name {
+			font-size: 24px;
+			line-height: 21px;
+			margin-bottom: 11px;
+			width: fit-content;
+			height: 21px;
+			font-style: bold;
+			font-weight: bold;
+		}
+
+		& .partner {
+			width: fit-content;
+			font-size: 14px;
+			line-height: 17px;
+			text-transform: uppercase;
+		}
+	}
+
+	& .partner_photo {
+		z-index: 3;
+		width: 488px;
+		height: 336px;
+		position: absolute;
+		right: 159px;
+		bottom: 0;
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.company_partners {
+		width: 928px;
+		height: 251px;
+
+		& .partner_info {
+			height: 204px;
+			padding: 30px;
+
+			& .info {
+				font-size: 20px;
+				line-height: 27px;
+				width: 441px;
+				height: 81px;
+				margin-bottom: 20px;
+			}
+
+			& .name {
+				font-size: 21px;
+				margin-bottom: 8px;
+			}
+
+			& .partner {
+				height: 14px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+
+		& .partner_photo {
+			width: 364px;
+			height: 251px;
+			right: 79px;
+
+
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.company_partners {
+		width: 832px;
+		margin-bottom: 60px;
+
+		& .partner_photo {
+			right: 11px;
+		}
+	}
+}
+
+@media (max-width: 980px) {
+	.company_partners {
+		width: 678px;
+		margin-bottom: 60px;
+
+		& .partner_info {
+			& .info {
+				font-size: 17px;
+				width: 363px;
+				height: 69px;
+				margin-bottom: 30px;
+			}
+		}
+
+		& .partner_photo {
+			right: -15px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.company_partners {
+		width: 629px;
+		height: 227px;
+		margin-bottom: 42px;
+
+		& .partner_info {
+			height: 185px;
+
+			& .info {
+				font-size: 17px;
+				line-height: 23px;
+				width: 363px;
+				height: 69px;
+			}
+
+			& .name {
+				font-size: 18px;
+				width: 197px;
+				height: 31px;
+			}
+
+			& .partner {
+				font-size: 12px;
+				line-height: 14.4px;
+				width: 119px;
+				height: 14px;
+			}
+
+		}
+
+		& .partner_photo {
+			right: -20px;
+			width: 328px;
+		}
+	}
+}
+
+@media (max-width: 730px) {
+	.company_partners {
+		width: 540px;
+		height: 227px;
+
+		& .partner_info {
+			padding: 27px;
+			height: 155px;
+
+			& .info {
+				font-size: 15px;
+				line-height: 20px;
+				width: 313px;
+				margin-bottom: 20px;
+			}
+
+			& .name {
+				font-size: 15px;
+				margin-bottom: 7px;
+				width: 167px;
+				height: 15px;
+			}
+
+			& .partner {
+				font-size: 10px;
+				line-height: 14.4px;
+				width: 119px;
+				height: 14px;
+			}
+
+		}
+
+		& .partner_photo {
+			right: -30px;
+			width: 308px;
+			height: 227px;
+		}
+	}
+}
+
+@media (max-width: 645px) {
+	.company_partners {
+		width: 420px;
+		height: 327px;
+		margin-bottom: 42px;
+
+		& .partner_info {
+			height: 275px;
+
+			& .info {
+				font-size: 16px;
+				width: 313px;
+				height: 69px;
+				margin-bottom: 140px;
+			}
+		}
+
+		& .partner_photo {
+			width: 258px;
+			height: 187px;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.company_partners {
+		width: 100%;
+		height: 253px;
+
+		& .partner_info {
+			height: 100%;
+			padding: 20px;
+
+			& .info {
+				font-size: 16px;
+				width: 328px;
+				height: 66px;
+				margin-bottom: 90px;
+			}
+
+			& .name {
+				font-size: 13px;
+				width: 137px;
+				height: 28px;
+			}
+
+			& .partner {
+				width: 109px;
+			}
+
+		}
+
+		& .partner_photo {
+			right: -30px;
+			width: 259px;
+			height: 186px;
+		}
+	}
+}
+
+@media (max-width: 410px) {
+	.company_partners {
+		height: 349px;
+		overflow: hidden;
+
+		& .partner_info {
+			& .info {
+				width: 100%;
+				margin-bottom: 150px;
+			}
+
+			& .name {
+				z-index: 3;
+				font-size: 16px;
+				margin-bottom: 17px;
+				height: 38px;
+			}
+
+			& .partner {
+				z-index: 4;
+				font-size: 10px;
+				line-height: 14.4px;
+				width: 109px;
+				height: 13px;
+			}
+
+		}
+
+		& .partner_photo {
+			z-index: 2;
+			right: -60px;
+			width: 259px;
+			height: 186px;
+		}
+	}
+}
