@@ -33,3 +33,17 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .App {
+    &_wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+      & .logo {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

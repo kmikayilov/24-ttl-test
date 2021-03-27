@@ -9,16 +9,81 @@
 	justify-content: center;
 	background-color: rgba(255,255,255,1);
 
+
 	.popup {
   		margin: 20px;
 		width: 1400px;
 		position: relative;
 	    height: 1103px;
+	    // display: block;
+		// overflow: auto;
+	    box-sizing: border-box;
+	    display: inline-block;
+	    // min-height: fit-content;
+	    // height: auto;
 	    background-color: white;
 	    border: 1.5px solid #000000;
 		box-sizing: border-box;
 		border-radius: 24px;
 		padding: 70px 80px 105px 80px;
+
+		&.ttl {
+			height: 1300px;
+			& .company_info {
+				flex-direction: column;
+
+				& .col {
+					width: 100%;
+					font-size: 18px;
+				}
+			}
+
+			& .company_partners {
+				height: 297px;
+				& .partner_info {
+					& .info {
+						line-height: 34px;
+						width: 766px;
+					}
+				}
+
+				& .partner_photo {
+					width: 371px;
+					height: 100%;
+					right: 100px;
+				}
+			}
+
+		}
+
+		&.cloudcontent {
+			height: 1400px;
+			& .company_info {
+				& .col {
+					font-size: 18px;
+				}
+			}
+
+			& .company_partners {
+				// height: 297px;
+				& .partner_info {
+					& .info {
+						// line-height: 34px;
+						// width: 766px;
+					}
+				}
+
+				& .partner_photo {
+					// width: 371px;
+					// height: 100%;
+					// right: 100px;
+				}
+			}
+		}
+
+		&.b2basket {
+
+		}
 
 		& .logo {
 			margin-right: auto;
@@ -46,8 +111,67 @@
 	.popup-bg {
 		.popup {
 			width: 1080px;
-			height: 988px;
+			height: 900px;
 			padding: 52px 53px 87px 79px;
+
+			&.ttl {
+				height: 1100px;
+				& .company_info {
+					& .col {
+						font-size: 16px;
+					}
+				}
+
+				& .company_partners {
+					height: 225px;
+					& .partner_info {
+						padding: 30px;
+						& .info {
+							line-height: 27px;
+							width: 601px;
+							font-size: 20px;
+							margin-bottom: 20px;
+						}
+
+						& .name {
+							// font-size: 24px;
+							// line-height: 21px;
+							// margin-bottom: 11px;
+							// width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: fit-content;
+							// font-size: 14px;
+							// line-height: 17px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						width: 281px;
+						height: 100%;
+						right: 54px;
+					}
+				}
+
+			}
+
+			&.cloudcontent {
+				height: 1200px;
+				& .company_info {
+					& .col {
+						font-size: 16px;
+					}
+				}
+			}
+
+			&.b2basket {
+
+			}
 
 			& .logo {
 				width: 247px;
@@ -62,11 +186,48 @@
 	.popup-bg {
 		.popup {
 			width: 928px;
-			height: 934px;
 			padding: 45px 48px 80px 38px;
 
 			& .logo {
 				margin-bottom: 40px;
+			}
+
+			&.ttl {
+				height: 1200px;
+				& .company_partners {
+					height: 252px;
+					& .partner_info {
+						& .info {
+							// line-height: 27px;
+							width: 558px;
+							// font-size: 20px;
+							// margin-bottom: 20px;
+						}
+
+						& .name {
+							font-size: 21px;
+							// line-height: 21px;
+							// margin-bottom: 11px;
+							// width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: fit-content;
+							// font-size: 14px;
+							line-height: 15px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						width: 312px;
+						height: 100%;
+						right: 14px;
+					}
+				}
 			}
 		}
 	}
@@ -76,11 +237,66 @@
 	.popup-bg {
 		.popup {
 			width: 768px;
-			height: 934px;
 			padding: 45px 48px 80px 38px;
 
-			& .logo {
-				margin-bottom: 40px;
+			&.ttl {
+				& .company_partners {
+					& .partner_info {
+						padding: 25px;
+
+						& .info {
+							line-height: 22px;
+							width: 397px;
+							font-size: 16px;
+							margin-bottom: 25px;
+							height: 88px;
+						}
+
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							// margin-bottom: 11px;
+							// width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						width: 270px;
+						height: 234px;
+						right: -15px;
+					}
+				}
+			}
+
+			&.cloudcontent {
+				height: 1050px;
+				& .company_partners {
+					height: 202px;
+					& .partner_info {
+						height: 186px;
+						& .info {
+							// height: 90px;
+							line-height: 21px;
+							width: 445px;
+						}
+					}
+
+					& .partner_photo {
+						width: 251px;
+						height: 100%;
+						// right: 100px;
+					}
+				}
 			}
 		}
 	}
@@ -90,8 +306,83 @@
 	.popup-bg {
 		.popup {
 			width: 703px;
-			height: 831px;
 			padding: 52px 38px 61px 29px;
+
+			&.ttl {
+				height: 1100px;
+				& .company_info {
+					& .col {
+						font-size: 14px;
+					}
+				}
+
+				& .company_partners {
+					// height: 234px;
+					& .partner_info {
+						height: unset;
+						& .info {
+							// line-height: 22px;
+							// width: 397px;
+							// font-size: 16px;
+							// margin-bottom: 25px;
+							// height: 88px;
+						}
+
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							// margin-bottom: 11px;
+							// width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						// width: 270px;
+						// height: 100%;
+						// right: -15px;
+					}
+				}
+			}
+
+			&.cloudcontent {
+				& .company_info {
+					& .col {
+						font-size: 14px;
+					}
+				}
+				
+				& .company_partners {
+					height: 202px;
+					& .partner_info {
+						height: 186px;
+						& .info {
+							// height: 90px;
+							line-height: 21px;
+							width: 445px;
+						}
+					}
+
+					& .partner_photo {
+						width: 251px;
+						height: 100%;
+						// right: 100px;
+					}
+				}
+			}
+
+			&.b2basket {
+
+			}
 
 			& .logo {
 				margin-bottom: 28px;
@@ -113,6 +404,55 @@
 	.popup-bg {
 		.popup {
 			width: 600px;
+
+			&.ttl {
+				& .company_partners {
+					height: 234px;
+					& .partner_info {
+						& .info {
+						// 	line-height: 22px;
+							width: 317px;
+						// 	font-size: 16px;
+						// 	margin-bottom: 25px;
+							height: 128px;
+						}
+
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							// margin-bottom: 11px;
+							width: fit-content;
+							// width: 317px !important;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						// width: 270px;
+						// height: 100%;
+						right: -15px;
+					}
+				}
+			}
+
+			&.cloudcontent {				
+				& .company_partners {
+					& .partner_info {
+						& .info {
+							width: 335px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -121,7 +461,70 @@
 	.popup-bg {
 		.popup {
 			width: 480px;
-			height: 1050px;
+			height: 1000px;
+
+			&.ttl {
+				height: 1400px;
+				& .company_partners {
+					height: 354px;
+					& .partner_info {
+						height: 100% !important;
+						& .info {
+						// 	line-height: 22px;
+							width: 100%;
+						// 	font-size: 16px;
+							margin-bottom: 85px;
+						// 	height: 128px;
+						}
+
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							// margin-bottom: 11px;
+							width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: 150px;
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						// width: 270px;
+						height: 234px;
+						right: -65px;
+					}
+				}
+			}
+
+			&.cloudcontent {
+				height: 1350px;
+				& .company_partners {
+					height: 354px;
+					& .partner_info {
+						height: 100%;
+						& .info {
+							// height: 90px;
+							line-height: 21px;
+							width: 100%;
+							margin-bottom: 135px;
+						}
+					}
+
+					& .partner_photo {
+						width: 238px;
+						height: 202px;
+						right: -50px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -129,8 +532,6 @@
 @media (max-width: 520px) {
 	.popup-bg {
 		.popup {
-			width: 480px;
-			height: 1000px;
 			padding: 20px;
 			border: none;
 			margin: 0;
@@ -141,24 +542,117 @@
 				margin-bottom: 30px;
 				margin-top: 5px;
 			}
-		}
-	}
-}
 
-@media (max-width: 410px) {
-	.popup-bg {
-		.popup {
-			width: 480px;
-			height: 1150px;
-			padding: 20px;
-			border: none;
+			&.ttl {
+				& .company_partners {
+					height: 354px;
+					& .partner_info {
+						height: 100% !important;
+						& .info {
+							line-height: 22px;
+							width: 100%;
+							font-size: 16px;
+							margin-bottom: 125px;
+							height: 128px;
+						}
 
-			& .logo {
-				width: 189px;
-				height: 51px;
-				margin-bottom: 30px;
-				margin-top: 5px;
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							// margin-bottom: 11px;
+							width: fit-content;
+							// height: 21px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							// width: 150px;
+							width: fit-content;
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						width: 270px;
+						height: 234px;
+						right: -65px;
+					}
+				}
 			}
 		}
 	}
 }
+
+@media (max-width: 460px) {
+	.popup-bg {
+		.popup {
+			&.ttl {
+				& .company_partners {
+					height: 384px;
+					& .partner_info {
+						// height: 100% !important;
+						& .info {
+							// line-height: 22px;
+							// width: 100%;
+							font-size: 16px;
+							// margin-bottom: 85px;
+							// height: 128px;
+						}
+
+						& .name {
+							font-size: 18px;
+							line-height: 21px;
+							margin-bottom: 11px;
+							width: 100px;
+							height: 45px;
+							// font-style: bold;
+							// font-weight: bold;
+						}
+
+						& .partner {
+							width: 150px;
+							height: 45px;
+							// width: fit-content;
+							// width: fit-content;
+							font-size: 12px;
+							line-height: 14px;
+							// text-transform: uppercase;
+						}
+					}
+
+					& .partner_photo {
+						width: 178px;
+						height: 208px;
+						right: -25px;
+					}
+				}
+			}
+
+			&.cloudcontent {
+				& .company_partners {
+					// height: 354px;
+					& .partner_info {
+						// height: 100%;
+						& .info {
+							// height: 90px;
+							// line-height: 21px;
+							// width: 100%;
+							margin-bottom: 135px;
+						}
+					}
+
+					& .partner_photo {
+						// width: 238px;
+						// height: 202px;
+						// right: -50px;
+					}
+				}
+			}
+		}
+	}
+}
+

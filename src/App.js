@@ -36,7 +36,7 @@ class App extends Component {
         return (
             <div className="App">
         <div className="App_wrapper">
-          <div className="logo" onClick={() => this.togglePopup('24-ttl')}><img src={logos('./24-ttl.svg').default} alt="24-ttl-logo"/></div>
+          <div className="logo" onClick={() => this.togglePopup('24ttl')}><img src={logos('./24ttl.svg').default} alt="24-ttl-logo"/></div>
           <div className="logo" onClick={() => this.togglePopup('cloudcontent')}><img src={logos('./cloudcontent.svg').default} alt="cloudcontent-logo"/></div>
           <div className="logo" onClick={() => this.togglePopup('b2basket')}><img src={logos('./b2basket.svg').default} alt="b2basket-logo"/></div>
         </div>
